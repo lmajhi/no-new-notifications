@@ -13,8 +13,6 @@ const Background = (props: any) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 10,
-        // backgroundColor: "powderblue"
     }
 })
 export default Background;
