@@ -2,15 +2,17 @@ import React from 'react';
 import Background from '../components/Background';
 import HomePodcastItem from '../components/HomePodcastItem';
 import { FlatGrid } from 'react-native-super-grid';
+import { getAllScreens } from '../../utils/routes';
+import { navigateTo } from '../../utils/naviagtion';
 
 const podcastList = [{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: () => console.log("No new notif")
+    start: () => navigateTo("NoNewNotificationEpisodeList")
 },{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: ""
+    start: () => getAllScreens()
 },{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
@@ -21,7 +23,7 @@ const podcastList = [{
     start: ""
 }];
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     return (<Background>
         <FlatGrid
             style={{ marginTop: 10}}
