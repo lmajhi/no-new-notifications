@@ -5,9 +5,10 @@ import HomeScreen from "../platform/screens/HomeScreen";
 
 export const navigationRef = useNavigationContainerRef();
 
-export const navigateTo = (screenName: string)=> {
+export const navigateTo = (screenName: string, params: any)=> {
     return navigationRef.navigate({
-        name: screenName});
+        name: screenName,
+      params: params});
 }
 
 export const screenMap = [
