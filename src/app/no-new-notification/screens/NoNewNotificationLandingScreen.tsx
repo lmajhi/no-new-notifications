@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../../../platform/components/Background";
+import EpisodeList from "../components/EpisodeList";
 import HeaderBoard from "../components/HeaderBoard";
 import HeaderDescription from "../components/HeaderDescription";
 const img =  "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg";
@@ -9,6 +10,7 @@ const NoNewNotificationLandingScreen = () => {
     return <Background>
         <HeaderBoard img={img} title={podcastName}/>
         <HeaderDescription desc={desc}/>
+        <EpisodeList/>
     </Background>
 };
 
