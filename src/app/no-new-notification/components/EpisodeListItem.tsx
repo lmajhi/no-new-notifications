@@ -1,9 +1,11 @@
 import React from "react"
-import { Image, StyleSheet, Text, View } from "react-native"
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { navigateTo } from "../../../utils/naviagtion"
 
 const EpisodeListItem = (episode) => {
 
-    return <View style={styles.container}>
+    return <TouchableOpacity onPress={() => navigateTo("NoNewNotificationEpisode",{episode: episode.item})}>
+    <View style={styles.container}>
         <View style={styles.infoContainer}>
             <View style={styles.episodeImageNameContainer}>
                 <Image style={styles.episodeImage} source={{ uri: episode.item.image["_href"]}}></Image>
@@ -16,6 +18,7 @@ const EpisodeListItem = (episode) => {
             source={require("../assets/play.png")}/>
         </View>
     </View>
+    </TouchableOpacity>
 }
 
 const styles = StyleSheet.create({

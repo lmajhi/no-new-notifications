@@ -2,25 +2,12 @@ import React from 'react';
 import Background from '../components/Background';
 import HomePodcastItem from '../components/HomePodcastItem';
 import { FlatGrid } from 'react-native-super-grid';
-import { getAllScreens } from '../../utils/routes';
 import { navigateTo } from '../../utils/naviagtion';
 
 const podcastList = [{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
     start: () => navigateTo("NoNewNotificationLandingScreen")
-},{
-    name: "No New Notification",
-    image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: () => getAllScreens()
-},{
-    name: "No New Notification",
-    image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: ""
-},{
-    name: "No New Notification",
-    image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: ""
 }];
 
 const HomeScreen = ({navigation}) => {
