@@ -8,7 +8,7 @@ import { navigateTo } from '../../utils/naviagtion';
 const podcastList = [{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
-    start: () => navigateTo("NoNewNotificationEpisodeList")
+    start: () => navigateTo("NoNewNotificationLandingScreen")
 },{
     name: "No New Notification",
     image: "https://pbcdn1.podbean.com/imglogo/image-logo/9135145/nnn-thumb-cmp.jpg",
